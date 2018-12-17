@@ -5,6 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "karma start",
+    "start:dev": "webpack-dev-server --config webpack.config.js --color --hot --inline",
     "start": "webpack --config webpack.config.dev.js",
     "watch-dev": "webpack --config webpack.config.dev.js --watch",
     "build": "webpack --config webpack.config.dist.js"
@@ -30,14 +31,14 @@
     "eslint-plugin-react": "^7.9.1",
     "html-webpack-plugin": "^3.2.0",
     "jest-enzyme": "^6.0.1",
-    "karma": "^2.0.2",
+    "karma": "^3.1.3",
     "karma-chrome-launcher": "^2.2.0",
     "karma-cli": "^1.0.1",
     "karma-mocha": "^1.3.0",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^3.0.0",
     "mocha": "^5.2.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.11.0",
     "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
@@ -47,5 +48,8 @@
     "webpack": "^4.10.2",
     "webpack-cli": "^3.0.1",
     "zip-webpack-plugin": "^3.0.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.1.10"
   }
 }
